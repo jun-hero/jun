@@ -132,6 +132,16 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.15);
         }
 
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .game-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
         .feature-icon {
             font-size: 3em;
             margin-bottom: 20px;
@@ -287,6 +297,7 @@
             <li><a href="#about">소개</a></li>
             <li><a href="#features">특징</a></li>
             <li><a href="#workflows">교육 방식</a></li>
+            <li><a href="#games">🎮 게임들</a></li>
             <li><a href="#ages">연령별 안내</a></li>
             <li><a href="#improvements">발전 포인트</a></li>
             <li><a href="ai-rules-generator.html" style="background: var(--primary-color); color: white; padding: 8px 16px; border-radius: 20px;">🎯 AI 맞춤 설정</a></li>
@@ -423,6 +434,33 @@
                         <li>🚀 복잡한 게임 기획을 AI와 함께 구현</li>
                     </ul>
                     <p style="margin-top: 15px;"><strong>추천:</strong> 빠른 구현, 문제 해결자</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="games">
+            <h2>🎮 직접 만든 게임들</h2>
+            <p style="text-align: center; margin-bottom: 30px;">
+                AI와 함께 만든 재미있는 게임들을 체험해보세요!
+            </p>
+            
+            <div class="games-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0;">
+                <div class="game-card" style="background: white; border-radius: 15px; padding: 30px; box-shadow: var(--shadow); text-align: center; transition: transform 0.3s;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px;">🏰 Hero Tower Defense</h3>
+                    <p style="margin-bottom: 20px; color: #666;">타워 디펜스 게임으로 영웅을 조작하여 적들을 물리치세요!</p>
+                    <a href="hero-tower-defense.html" class="game-button" style="display: inline-block; background: var(--primary-color); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s;">게임 시작하기</a>
+                </div>
+                
+                <div class="game-card" style="background: white; border-radius: 15px; padding: 30px; box-shadow: var(--shadow); text-align: center; transition: transform 0.3s;">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 15px;">🦸‍♂️ Superhero Adventure</h3>
+                    <p style="margin-bottom: 20px; color: #666;">슈퍼히어로가 되어 악당들과 싸우는 모험 게임입니다!</p>
+                    <a href="superhero-adventure.html" class="game-button" style="display: inline-block; background: var(--secondary-color); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s;">게임 시작하기</a>
+                </div>
+                
+                <div class="game-card" style="background: white; border-radius: 15px; padding: 30px; box-shadow: var(--shadow); text-align: center; transition: transform 0.3s;">
+                    <h3 style="color: #ff6b6b; margin-bottom: 15px;">🤖 AI Rules Generator</h3>
+                    <p style="margin-bottom: 20px; color: #666;">AI와 함께 게임 규칙을 만들어보는 도구입니다!</p>
+                    <a href="ai-rules-generator.html" class="game-button" style="display: inline-block; background: #ff6b6b; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s;">도구 사용하기</a>
                 </div>
             </div>
         </section>
